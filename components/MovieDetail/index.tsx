@@ -37,7 +37,6 @@ export function MovieDetail(props: MovieDetailProps) {
   const profit = Math.floor(
     ((props.data.revenue - props.data.budget) / props.data.budget) * 100,
   );
-  console.log(company);
   return (
     <div
       className={style.container}
@@ -106,6 +105,13 @@ export function MovieDetail(props: MovieDetailProps) {
               );
             })}
           </div>
+          <button
+            className={style.watch}
+            onClick={() => {
+              alert("Làm gì có phim mà coi :V");
+            }}>
+            Watch movie
+          </button>
         </div>
       </div>
     </div>

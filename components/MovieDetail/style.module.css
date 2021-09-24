@@ -60,6 +60,18 @@
   border-radius: 10px;
   font-weight: bold;
 }
+.watch {
+  background-color: #d91f27;
+  color: white;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px 10px 5px 10px;
+}
+.watch:hover {
+  cursor: pointer;
+  background-color: #aa1219;
+}
 @media screen and (max-width: 992px) {
   .container {
     background-size: contain;

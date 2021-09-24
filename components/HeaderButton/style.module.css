@@ -1,0 +1,25 @@
+.container {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container:hover {
+  cursor: pointer;
+}
+.container:hover .icon {
+  color: #d91f27;
+}
+.container:hover .title {
+  opacity: 1;
+}
+.icon {
+  font-size: 20px;
+  transition: 0.8s;
+}
+.title {
+  margin: 0;
+  opacity: 0;
+  transition: 0.4s;
+}

@@ -2,8 +2,19 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
 }
 .btnGroup {
   display: flex;
 }
-
+.type {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ae0907;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

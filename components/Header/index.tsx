@@ -13,6 +13,7 @@ export interface HeaderProps {}
 
 export function Header(props: HeaderProps) {
   const rounter = useRouter();
+  const { type } = rounter.query;
   return (
     <div className={style.container}>
       <div className={style.btnGroup}>
@@ -21,9 +22,10 @@ export function Header(props: HeaderProps) {
         <HeaderButton title="Dribble" Icon={IoLogoDribbble} />
         <HeaderButton title="Instagram" Icon={IoLogoInstagram} />
       </div>
+      <h1 className={style.type}>{type}</h1>
       <div>
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+          src="/logo.png"
           alt="logo"
           width={200}
           height={55}

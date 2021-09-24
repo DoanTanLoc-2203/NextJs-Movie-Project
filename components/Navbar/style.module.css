@@ -1,14 +1,15 @@
 .container {
-  display: flex;
-  justify-content: start;
   background-color: #222222;
   padding-top: 5px;
   padding-bottom: 5px;
-  flex-wrap: wrap;
+  overflow: hidden;
+}
+.item {
+  text-align: center;
 }
 .button {
   white-space: nowrap;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px 10px 5px 10px;
   border-bottom: 2px solid transparent;
   margin: 0 5px 0 5px;

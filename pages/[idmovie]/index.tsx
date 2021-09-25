@@ -22,6 +22,9 @@ interface Item {
   status: string;
   vote_average: number;
   vote_count: number;
+  videos: {
+    results: { id: number; key: string }[];
+  };
 }
 
 export interface MovieDetailPageProps {

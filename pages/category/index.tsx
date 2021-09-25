@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const res = req ? await req.json() : null;
     return {
       props: {
-        data: res.items || null,
+        data: res.results || null,
       },
     };
   } catch {

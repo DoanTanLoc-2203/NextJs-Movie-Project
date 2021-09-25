@@ -93,6 +93,14 @@
     justify-content: center;
   }
 }
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.videoitem {
+  max-width: 600px;
+}
 @media screen and (max-width: 800px) {
   .detail {
     flex-direction: column;

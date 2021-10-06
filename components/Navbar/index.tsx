@@ -56,7 +56,6 @@ export function Navbar() {
     };
     getdata();
   }, []);
-
   return (
     <>
       <div className={style.container}>

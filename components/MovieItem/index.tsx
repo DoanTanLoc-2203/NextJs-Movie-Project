@@ -32,22 +32,22 @@ export function MovieItem(props: MovieItemProps) {
             height={450}
             className={style.image}
           />
-          <h4 className={style.vote}>{props.data.vote_average}</h4>
+          <h1 className={style.vote}>{props.data.vote_average}</h1>
           <div className={style.content}>
-            <h3 className={style.title}>{props.data.title}</h3>
+            <h2 className={style.title}>{props.data.title}</h2>
             <div className={style.rate}>
-              <h5 className={style.calendaContent}>
+              <h3 className={style.calendaContent}>
                 <i className={style.calenda}>
                   <IoCalendarClearOutline />
                 </i>
                 {props.data.release_date}
-              </h5>
-              <h5 className={style.calendaContent}>
+              </h3>
+              <h3 className={style.calendaContent}>
                 <i className={style.calenda}>
                   <IoThumbsUpOutline />
                 </i>
                 {props.data.vote_count}
-              </h5>
+              </h3>
             </div>
 
             <p className={style.overview}>{props.data.overview}</p>

@@ -53,7 +53,7 @@ export function MovieDetail(props: MovieDetailProps) {
         }}>
         <div className={style.bg}>
           <div className={style.left}>
-            <h2 className={style.name}>{props.data.original_title}</h2>
+            <h1 className={style.name}>{props.data.original_title}</h1>
             <Image
               alt=""
               src={process.env.IMAGE_BASE + props.data.poster_path}
@@ -63,9 +63,9 @@ export function MovieDetail(props: MovieDetailProps) {
           </div>
 
           <div className={style.right}>
-            <h4 className={style.tag}>OVER VIEW</h4>
+            <h2 className={style.tag}>OVER VIEW</h2>
             <p className={style.overview}>{props.data.overview}</p>
-            <h4 className={style.tag}>INFOMATION</h4>
+            <h2 className={style.tag}>INFOMATION</h2>
             <div className={style.detail}>
               <div className={style.icon}>
                 <p className={style.icontitle}>Status: {props.data.status}</p>

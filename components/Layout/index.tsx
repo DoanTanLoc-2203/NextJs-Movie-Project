@@ -12,6 +12,9 @@ export default function Layout(props: LayoutProps) {
       <Head>
         <title>Netflox</title>
         <link rel="icon" href="/netflix.png" />
+        <meta
+          name="description"
+          content="This is a movie infomation website. Just fun!"></meta>
       </Head>
       <Header />
       <Navbar />
